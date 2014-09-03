@@ -4,10 +4,28 @@ A PHP client package for the National Center for Biotechnology Information (NCBI
 
 ## Installing
 
-This is an old pre-Composer version of this package, which requires manual installation. This package also
-depends on the [HTTP_Request](http://pear.php.net/package/HTTP_Request), PEAR package, which also requires separate, manual installation.
+Install via [Composer](http://getcomposer.org). In your project's `composer.json`:
 
-## Newer Versions
+```json
+  "require": {
+    "umnlib/ncbi-eutils-client": "1.0.*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:UMNLibraries/ncbi-eutils-client-php.git"
+    }
+  ]
+```
 
-For newer versions of this package that use Composer, see any versions `>=1.0.0`.
+## Running the Tests
 
+Running the PHPUnit tests requires configuration. Notice that `phpunit.xml.dist` contains a place to put `your-email-here` and `your-tool-name-here`. Do not modify that file! Instead, copy the file to `phpunit.xml`, which will override `phpunit.xml.dist`, and insert your organization-specific data into that file. This repository is configured to ignore `phpunit.xml`, which helps to prevent exposing sensitive information, like passwords, to public source control repositories.
+
+## Older Versions
+
+For older versions of this package that did not use Composer, see the `0.x.y` releases.
+
+## Attribution
+
+The University of Minnesota Libraries created this software for the [EthicShare](http://www.ethicshare.org/about) project.

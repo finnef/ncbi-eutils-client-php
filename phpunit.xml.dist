@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit 
+  backupGlobals="false"
+  backupStaticAttributes="false"
+  bootstrap="vendor/autoload.php"
+  colors="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  processIsolation="false"
+  stopOnFailure="false"
+  syntaxCheck="false"
+>
+  <php>
+    <env name="NCBI_USER_EMAIL" value="your-email-here" />
+    <env name="NCBI_USER_TOOL" value="your-tool-name-here" />
+  </php>
+  <testsuites>
+    <testsuite name="UmnLib NCBI Eutils Client Test Suite">
+      <directory suffix=".php">./tests/</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist>
+      <directory>./</directory>
+      <exclude>
+        <directory>./vendor</directory>
+        <directory>./tests</directory>
+      </exclude>
+    </whitelist>
+  </filter>
+</phpunit>
