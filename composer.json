@@ -11,7 +11,7 @@
 
   "require": {
     "umnlib/argvalidator": "1.0.*",
-    "umnlib/file-set-datesequence": "1.0.*",
+    "umnlib/file-set-datesequence": "1.x-dev",
     "umnlib/set": "1.0.*",
     "guzzle/guzzle": "3.8.0"
   },
