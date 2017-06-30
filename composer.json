@@ -13,7 +13,7 @@
     "umnlib/argvalidator": "1.0.*",
     "umnlib/file-set-datesequence": "dev-master",
     "umnlib/set": "1.0.*",
-    "guzzlehttp/guzzle": "3.8.0"
+    "guzzlehttp/guzzle": "^6.2.1"
   },
 
   "repositories": [
